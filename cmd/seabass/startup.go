@@ -1,6 +1,6 @@
 package main
 
-// register routes, configs, services, moddleware, etc.
+// StartUp registers routes, configs, services, moddleware, etc.
 func StartUp() {
-    // do something
+	// do something
 }
