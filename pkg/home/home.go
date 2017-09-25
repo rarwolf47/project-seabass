@@ -1,15 +1,13 @@
-package model
+package home
 
-/*import (
-	"shared/src"
-)*/
+import (
+	"fmt"
+	"net/http"
+)
 
-type Model struct {
-	Name string
-}
-
-func Init(name string) Model {
-	var mdl Model
-	mdl.Name = name
-	return mdl
+// Index is the default action for each URL route in the application
+func Index() http.HandlerFunc {
+	return (func(rw http.ResponseWriter, rq *http.Request) {
+		fmt.Fprintf(rw, "You have reached the homepage of project seabass.")
+	})
 }
