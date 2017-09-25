@@ -6,5 +6,5 @@ const (
 )
 
 func main() {
-	RunServer(defaultPort)
+	runServer(defaultPort)
 }

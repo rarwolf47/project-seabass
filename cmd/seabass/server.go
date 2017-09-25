@@ -5,6 +5,6 @@ import (
 	"strconv"
 )
 
-func RunServer(port int) {
+func runServer(port int) {
 	http.ListenAndServe(":"+strconv.Itoa(port), nil)
 }
